@@ -1,0 +1,417 @@
+.side_bgc {
+    background-color: #5f5750;
+}
+
+.hero_section {
+    display: flex;
+    height: 440px;
+}
+
+.side_menu {
+    position: relative;
+    width: 234px;
+    height: 100%;
+    background-color: #a09e9e;
+}
+
+.side_menu ul {
+    margin: 10px 0;
+}
+
+.side_menu ul li {
+    height: 42px;
+}
+
+.side_menu ul li a {
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    color: #f5f5f5;
+    line-height: 42px;
+    padding-left: 20px;
+}
+
+.side_menu ul li a::after {
+    content: '';
+    display: inline-block;
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    width: 8px;
+    height: 8px;
+    border-top: 2px solid #f5f5f5;
+    border-right: 2px solid #f5f5f5;
+    transform: rotate(45deg);
+}
+
+.side_menu ul li a:hover {
+    background-color: #ff6700;
+}
+
+.menu_absolute {
+    position: absolute;
+    top: 0;
+    left: 234px;
+    overflow: hidden;
+    height: 440px;
+    z-index: 999;
+    box-shadow: 1px 1px rgba(176, 176, 176, 0.5);
+}
+
+.menu_showcase {
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    height: 100%;
+    background-color: #fff;
+}
+
+.menu_showcase a {
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+    width: 248px;
+    font-size: 14px;
+}
+
+.menu_showcase a img {
+    width: 35px;
+    margin-right: 10px;
+}
+
+.menu_showcase a:hover {
+    color: #ff6700;
+}
+
+.side {
+    flex: 1;
+    min-width: 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.side ul {
+    float: left;
+    display: flex;
+    height: 100%;
+}
+
+.side ul li {
+    flex-shrink: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.side ul li a {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.side ul li a img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.lbtn,
+.rbtn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 41px;
+    height: 69px;
+    text-align: center;
+    line-height: 69px;
+    z-index: 1;
+}
+
+.lbtn {
+    left: 0;
+}
+
+.rbtn {
+    right: 0;
+}
+
+.lbtn:hover,
+.rbtn:hover {
+    background-color: #757575;
+}
+
+.lbtn::after,
+.rbtn::after {
+    content: '';
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    border-top: 3px solid #a09e9e;
+}
+
+.lbtn::after {
+    border-left: 3px solid #a09e9e;
+    transform: rotate(-45deg);
+}
+
+.rbtn::after {
+    border-right: 3px solid #a09e9e;
+    transform: rotate(45deg);
+}
+
+.rank {
+    position: absolute;
+    bottom: 20px;
+    right: 30px;
+}
+
+.rank span {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin: 0 3px;
+    border-radius: 50%;
+    border: 1px solid #5f5750;
+}
+
+.rank span:hover {
+    background-color: #5f5750;
+}
+
+.fixed {
+    position: fixed;
+    right: 0;
+}
+
+.scroll {
+    top: 200px;
+}
+
+.scrolled {
+    top: 98px;
+}
+
+a[class^="fixed_help"] {
+    width: 84px;
+    height: 92px;
+    font-size: 14px;
+    text-align: center;
+    border: 1px solid #eee;
+}
+
+.fixed {
+    z-index: 999;
+}
+
+.fixed_help1 {
+    display: block;
+    color: #757575;
+}
+
+.fixed_help2 {
+    display: none;
+    color: #ff6700;
+}
+
+a[class^="fixed_help"] img {
+    display: block;
+    margin: 10px auto;
+    width: 30px;
+    height: 30px;
+}
+
+.top {
+    margin-top: 10px;
+}
+
+.feature_section {
+    margin-top: 20px;
+    height: 170px;
+}
+
+.services {
+    display: flex;
+    flex-wrap: wrap;
+    width: 234px;
+    height: 100%;
+    background-color: #5f5750;
+}
+
+.services div {
+    flex: 30%;
+    min-width: 0;
+}
+
+.services div a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 15px;
+    width: 100%;
+    height: 100%;
+}
+
+.services div a img {
+    flex: 1;
+    width: 40px;
+    height: 40px;
+}
+
+.services div a span {
+    flex: 1;
+    font-size: 12px;
+    color: #b0b0b0;
+}
+
+.showcase {
+    display: flex;
+    justify-content: space-between;
+    width: 978px;
+}
+
+.showcase div {
+    width: 316px;
+    height: 100%;
+}
+
+.showcase div a {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.showcase div a img {
+    width: 100%;
+}
+
+.showcase div:hover {
+    box-shadow: 1px 1px rgba(176, 176, 176, 0.5);
+}
+
+.content {
+    margin-top: 20px;
+    background-color: #f5f5f5;
+}
+
+.promo_banner {
+    height: 120px;
+}
+
+.promo_banner a {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.promo_banner a img {
+    width: 100%;
+    height: 100%;
+    object-fit: corver;
+}
+
+.product_cart {
+    position: relative;
+    margin-top: 10px;
+    height: 58px;
+    line-height: 50px;
+}
+
+.product_cart span {
+    font-size: 22px;
+    font-weight: 400;
+    color: #333;
+}
+
+.search_more {
+    float: right;
+    padding-right: 30px;
+    font-size: 16px;
+    font-weight: 400;
+    color: #424242;
+    transition: color 0.5s;
+}
+
+.search_more::before {
+    content: '';
+    position: absolute;
+    top: 15px;
+    right: 0;
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    background-color: #b0b0b0;
+    transition: background-color 0.5s;
+}
+
+.search_more::after {
+    content: '';
+    position: absolute;
+    top: 21px;
+    right: 8px;
+    width: 8px;
+    height: 8px;
+    border-top: 2px solid #fff;
+    border-right: 2px solid #fff;
+    transform: rotate(45deg);
+}
+
+.search_more:hover {
+    color: #ff6700;
+}
+
+.search_more:hover::before {
+    background-color: #ff6700;
+}
+
+.product {
+    display: flex;
+    height: 614px;
+}
+
+.featured_product {
+    width: 234px;
+    height: 100%;
+}
+
+.featured_product a {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.featured_product a img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.product_grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: space-between;
+    padding-left: 15px;
+    width: 992px;
+    height: 100%;
+}
+
+.product_grid a {
+    width: 234px;
+    height: 300px;
+    border: 1px solid pink;
+}
+
+.product_grid a img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.content_end {
+    margin-top: 30px;
+}
+
+.filler {
+    height: 30px;
+}

@@ -1,0 +1,5 @@
+- 本项目仅用于前端学习、练习 HTML/CSS/JS，**非小米官方项目，与小米集团无任何关联**。
+- 页面中的 Logo、图片、文案、商标均归小米公司及相关权利人所有。
+- **禁止用于商业用途、部署为仿冒官网、或误导用户以为是官方站点**。
+- 如权利人认为侵权，可联系作者下架，作者将立即删除相关仓库与资源。
+- This is an unofficial clone for learning purposes only. All trademarks/logos belong to Xiaomi.
