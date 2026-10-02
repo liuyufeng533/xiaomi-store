@@ -364,48 +364,23 @@ a[class^="fixed_help"] img {
     background-color: #ff6700;
 }
 
-.product {
-    display: flex;
+.product_grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 15px;
     height: 614px;
 }
 
 .featured_product {
-    width: 234px;
-    height: 100%;
-}
-
-.featured_product a {
-    display: block;
-    width: 100%;
-    height: 100%;
-}
-
-.featured_product a img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.product_grid {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-content: space-between;
-    padding-left: 15px;
-    width: 992px;
-    height: 100%;
-}
-
-.product_grid a {
-    width: 234px;
-    height: 300px;
-    border: 1px solid pink;
+    grid-row: 1/3;
 }
 
 .product_grid a img {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    border: 1px solid pink
 }
 
 .content_end {
