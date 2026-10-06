@@ -164,6 +164,7 @@
     position: absolute;
     bottom: 20px;
     right: 30px;
+    cursor: pointer;
 }
 
 .rank span {
@@ -226,6 +227,8 @@ a[class^="fixed_help"] img {
 }
 
 .feature_section {
+    display: flex;
+    justify-content: space-between;
     margin-top: 20px;
     height: 170px;
 }
@@ -376,11 +379,15 @@ a[class^="fixed_help"] img {
     grid-row: 1/3;
 }
 
+
+.product_grid a {
+    border: 1px solid pink
+}
+
 .product_grid a img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
-    border: 1px solid pink
+    object-fit: content;
 }
 
 .content_end {

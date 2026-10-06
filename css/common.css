@@ -3,14 +3,6 @@
     margin: 0 auto;
 }
 
-.fl {
-    float: left;
-}
-
-.fr {
-    float: right;
-}
-
 p {
     font-size: 12px;
     color: #616161;
@@ -24,19 +16,13 @@ p {
     border: 1px solid #ff6700 !important;
 }
 
-.clearfix::after {
-    content: '';
-    display: block;
-    height: 0;
-    visibility: hidden;
-    clear: both;
-}
-
 .header {
     background-color: #333;
 }
 
 .topbar {
+    display: flex;
+    justify-content: space-between;
     height: 40px;
     line-height: 40px;
 }
@@ -131,6 +117,11 @@ p {
 
 .logo  a:hover {
     transform: translateX(1px);
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
 }
 
 .nav_list {
